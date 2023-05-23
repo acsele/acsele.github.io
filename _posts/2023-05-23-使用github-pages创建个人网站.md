@@ -6,7 +6,7 @@ categories:
 - personal works
 tags: 
 - github pages
-- personal website
+- 个人网站
 ---
 
 # 01 前言
