@@ -84,7 +84,10 @@ img_cdn:
 avatar: /assets/img/favicons/favicon.jpg
 
 # boolean type, the global switch for TOC in posts.
-toc: true
+toc:
+    enabled: true
+    h_min: 1
+    h_max: 3
 
 comments:
   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
