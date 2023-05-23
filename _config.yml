@@ -198,3 +198,14 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# 使用Jekyll-Compose插件(https://github.com/jekyll/jekyll-compose)，自动创建md文件头部的文档信息模板
+# 使用方法：在网站根目录执行bundle exec jekyll post "文件名"
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      categories: [待分类, 默认目录]
+      tags: [test]
+    posts:
+      categories: [待分类, 默认目录]
+      tags: [test]
