@@ -3,7 +3,7 @@ layout: post
 title: 使用github pages创建个人网站
 date: 2023-05-23 14:01 +0800
 categories: 
-- personal works
+- 个人作品
 tags: 
 - 测试
 - 个人网站
