@@ -2,11 +2,8 @@
 layout: post
 title: 使用github pages创建个人网站
 date: 2023-05-23 14:01 +0800
-categories:
-- 个人项目
-tags:
-- github pages
-- 个人博客网站搭建
+categories: [个人项目]
+tags: [github pages,个人博客网站搭建]
 ---
 
 # 01 前言
