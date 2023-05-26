@@ -9,7 +9,7 @@ tags:
 - 个人网站
 ---
 
-# 01 前言
+## 01 前言
 
 首先，本文目的是搭建个人网站，搭建个人网站有很多方法，之前尝试过租用云服务器，使用wordpress搭建，运行了一年时间，没有继续运行下去。主要原因有以下几点：
 
@@ -32,7 +32,7 @@ tags:
 
 
 
-# 02 Github Pages 用法
+## 02 Github Pages 用法
 既然是借助github构建个人网站，那么即使我们本地没有任何运行环境也可以。但是如果想在文章发布前在本地进行预览和修改，就需要在本地准备jekyll的运行环境，上面提到了jekyll是ruby语言开发的，所以还需要安装ruby运行环境。
 > **友情提示**
 >
@@ -41,31 +41,31 @@ tags:
 
 
 
-## 方案一：不配置本地运行环境
+### 方案一：不配置本地运行环境
 
-### 1. 选择一个网站主题
+#### 1. 选择一个网站主题
 
 从官方主题网站 http://jekyllthemes.org/ 中，选择一个主题，进入主题的github主页
 
-### 2. fork主题
+#### 2. fork主题
 
 一般如果是个人网站，fork到个人的仓库中时，仓库命名应该为username.github.io
 
 点击项目主页中，项目名称下方菜单栏依次点击settings->pages->Build and deployment，选择master分支，点击保存。等待片刻，就可以访问acsele.github.io了，如果要进行进一步的个性化设置，继续下面的步骤。
 
-### 3. 克隆到本地
+#### 3. 克隆到本地
 
 在fork后的个人项目username.github.io主页，项目文件列表右上方的code->https，复制项目的github地址，用于本地克隆。
 
 本地打开一个命令行终端窗口，跳转到合适的文件夹，执行git clone "复制的项目https地址"
 
-### 4. 完成readme教程中bundle命令前的步骤
+#### 4. 完成readme教程中bundle命令前的步骤
 > **友情提示**
 >
 > bundle命令及其后的内容是在本地搭建网站运行环境，我们不需要本地环境，所以到此为止，后面的工作，当我们把项目push到github的username.github.io仓库后，github会使用Jekyll帮我们完成。
 {: .prompt-tip}
 
-### 5. 提交到github
+#### 5. 提交到github
 
 在项目的根目录下使用Git GUI程序提交，或者依次执行：
 
@@ -79,25 +79,25 @@ git push
 {: .prompt-danger}
 
 
-## 方案二：配置本地运行环境
+### 方案二：配置本地运行环境
 
 > 不同系统的jekyll安装教程地址：https://jekyllrb.com/docs/installation/
 {: .prompt-tip }
 
 以下步骤以Windows为例：
 
-### 1. 安装ruby和Jekyll
+#### 1. 安装ruby和Jekyll
 
 1. 从[RubyInstaller Downloads](https://rubyinstaller.org/downloads/)下载并安装**Ruby+Devkit**版本。使用默认选项进行安装。
 2. 运行`ridk install`安装向导最后阶段的步骤。这是安装带有本机扩展的 gem 所必需的。[您可以在RubyInstaller 文档](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)中找到关于此的更多信息 。从选项中选择`MSYS2 and MINGW development tool chain`。
 3. 从开始菜单打开一个新的命令提示符窗口，使对`PATH`环境变量的更改生效。安装 Jekyll 和 Bundler 使用`gem install jekyll bundler`
 4. 检查 Jekyll 是否安装正确：`jekyll -v`
 
-### 3. 根据Gemfile安装依赖
+#### 3. 根据Gemfile安装依赖
 
 在项目根目录下打开命令行窗口，执行`bundle`命令 
 
-### 4. 启动Jekyll网站
+#### 4. 启动Jekyll网站
 
 项目根目录下打开命令窗口，执行`bundle exec jekyll s`
 
@@ -105,11 +105,11 @@ git push
 
 
 
-# 03 使用Jekyl的常见问题
+## 03 使用Jekyl的常见问题
 
 
 
-## Markdown文件中图片路径问题
+### Markdown文件中图片路径问题
 
 原因分析：
 
