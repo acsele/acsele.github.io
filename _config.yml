@@ -209,3 +209,6 @@ jekyll_compose:
     posts:
       categories: [待分类, 默认目录]
       tags: [test]
+
+# 显示debug级别的日志信息
+verbosity: debug
