@@ -123,3 +123,22 @@ git push
 
 这两种都是下下策，但是还没发现其他办法
 
+### 全局问题
+
+1. 配置文件哪怕写错或多写一个字母，github pages自动部署时就无法正常显示页面，但是本地测试可以
+
+## 04 jekyll使用技巧
+
+### 4.1 使用插件自动新建文章
+
+插件地址：https://github.com/jekyll/jekyll-compose
+
+常用命令：
+
+- bundle exec jekyll help：查看帮助
+- bundle exec jekyll post "My New Post"：新建文章
+
+> 新建的文章头部会有文章的元数据，可以修改文章的归档信息、数学公式渲染等
+>
+{: .prompt-tip}
+
