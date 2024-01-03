@@ -1,0 +1,280 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Acsele</title>
+  <subtitle>学习过程就是不断重复，希望通过有规律的复习总结，不断回顾，把学过的内容形成长期记忆</subtitle>
+  <updated>2024-01-03T17:40:35+08:00</updated>
+  <author>
+    <name>acsele</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2024 acsele </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>数据库实验报告</title>
+    <link href="http://localhost:4000/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" rel="alternate" type="text/html" title="数据库实验报告" />
+    <published>2024-01-03T16:46:00+08:00</published>
+  
+    <updated>2024-01-03T17:23:15+08:00</updated>
+  
+    <id>http://localhost:4000/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/</id>
+    <content src="http://localhost:4000/posts/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" />
+    <author>
+      <name>acsele</name>
+    </author>
+
+  
+    
+    <category term="专业基础知识" />
+    
+    <category term="数据库系统概论" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      实验目的
+
+
+  学习关系数据库语言 SQL 基本语句操作
+  学习关系数据库的安全性操作
+  学习关系数据库的完整性操作
+
+
+实验平台
+
+
+  操作系统：windows 10
+  使用软件:
+    
+      版本控制软件：Git
+      数据库管理系统：MySql数据库管理系统
+    
+  
+
+
+实验前准备
+
+Git，mysql安装配置
+
+实验内容
+
+第一部分实验  mysql语句练习
+
+1.定义模式
+
+[例3.1]为用户WANG定义一个学生课程模式S-T
+
+
+
+总结：
+
+mysql中模式对象名称规范：（详细内容参考）
+
+
+
+遗留问题20201020：
+
+mysql如何为指定用户创建数据库？
+
+​	先用指定用户登录，再使用该用户创建数据库
+
+基本表的定义、删除与修改
+
+[例3.5]建立一个学生表student；
+
+SQL语句创建基本表：
+
+
+
+可以看到，创建表成功，SQ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>补码的原理</title>
+    <link href="http://localhost:4000/posts/%E8%A1%A5%E7%A0%81%E7%9A%84%E5%8E%9F%E7%90%86/" rel="alternate" type="text/html" title="补码的原理" />
+    <published>2023-07-15T23:13:00+08:00</published>
+  
+    <updated>2023-07-15T23:13:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/%E8%A1%A5%E7%A0%81%E7%9A%84%E5%8E%9F%E7%90%86/</id>
+    <content src="http://localhost:4000/posts/%E8%A1%A5%E7%A0%81%E7%9A%84%E5%8E%9F%E7%90%86/" />
+    <author>
+      <name>acsele</name>
+    </author>
+
+  
+    
+    <category term="专业基础知识" />
+    
+    <category term="计算机组成原理" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      补码为什么能把减法转换成加法
+
+01 补码的核心思想——模算术
+
+首先，能把减法转换成加法的前提一定是有限的数据表示范围，例如钟表的12个整数（可以表示1~12，也可以是-10~1等等）、64位计算机的$2^{64}$（可以表示有符号数 $-2^{63}\sim2^{63}-1$  ，或者无符号数$ 0 \sim 2^{64}-1$）。如果没有任何像前面的条件，直接问你$4-2$应该等于4加哪一个正整数，那一定是不存在的，即   $4-2=4+x  $   中正整数x不可能存在。
+
+但是，如果有了一个有限的数据表示范围，利用”模算数“就可能求出上面的x。
+
+
+  模算数或称同余运算（英语：Modular arithmetic）是一个整数的算术系统，其中数字超过一定值后（称为模/馀数）后会“卷回”到较小的数值，模算数最早是出现在卡尔·弗里德里希·高斯在1801年出版的《算术研究》一书中...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Java集合</title>
+    <link href="http://localhost:4000/posts/java%E9%9B%86%E5%90%88/" rel="alternate" type="text/html" title="Java集合" />
+    <published>2023-05-23T21:36:00+08:00</published>
+  
+    <updated>2023-07-15T23:53:07+08:00</updated>
+  
+    <id>http://localhost:4000/posts/java%E9%9B%86%E5%90%88/</id>
+    <content src="http://localhost:4000/posts/java%E9%9B%86%E5%90%88/" />
+    <author>
+      <name>acsele</name>
+    </author>
+
+  
+    
+    <category term="软件开发" />
+    
+    <category term="Java" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 学习目标
+
+
+  概述部分：
+
+  
+    什么是java集合
+    java集合的特点
+    java的集合框架的体系结构图
+    常用的集合类
+    List、Set、Map的区别
+    集合框架的底层数据结构
+    哪些集合类是线程安全的
+    java集合的快速失败机制 “fail-fast”
+    如何确保一个集合不能被修改
+  
+
+
+
+  Collection接口部分：
+
+  
+    List接口
+    Set接口
+    队列
+  
+
+
+
+  Map接口部分：
+
+  
+    HashMap的实现原理
+    TreeMap的实现原理
+    HashMap的put方法的具体流程
+    HashMap的扩容操作实现
+    HashMap如何处理哈希冲突
+    能否使用任何类作为Map的key，为什么String、Integer这样的包装...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>使用github pages创建个人网站</title>
+    <link href="http://localhost:4000/posts/%E4%BD%BF%E7%94%A8github-pages%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" rel="alternate" type="text/html" title="使用github pages创建个人网站" />
+    <published>2023-05-23T14:01:00+08:00</published>
+  
+    <updated>2023-07-15T23:53:07+08:00</updated>
+  
+    <id>http://localhost:4000/posts/%E4%BD%BF%E7%94%A8github-pages%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</id>
+    <content src="http://localhost:4000/posts/%E4%BD%BF%E7%94%A8github-pages%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/" />
+    <author>
+      <name>acsele</name>
+    </author>
+
+  
+    
+    <category term="个人项目" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      01 前言
+
+首先，本文目的是搭建个人网站，搭建个人网站有很多方法，之前尝试过租用云服务器，使用wordpress搭建，运行了一年时间，没有继续运行下去。主要原因有以下几点：
+
+
+  云服务器是付费的
+  域名需要购买，并且网站需要备案，流程复杂
+  使用wordpress搭建的网站上传新文章比较麻烦，不利于频繁更新
+
+
+所以，当了解到github pages可以解决上述烦恼时，毫不犹豫的选择采用github pages来搭建个人网站。
+
+
+  github pages 原理
+
+  通过Jekyll解析你的github中名为username.github.io的仓库，发布到username.github.io域名上。其中Jekyll 是一个静态网站生成器。它以 Ruby 语言开发，被广泛用于构建静态网站、博客和文档站点。与Jekyll类似的当然还有很多静态网站生成器，这里选择GitH...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
