@@ -50,13 +50,12 @@ jobs:
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
-        continue-on-error: true
+    
 
       - name: Test site
         run: |
-          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href 
-        continue-on-error: true
-
+          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href --http-status-ignore "404,500"
+       
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v1
