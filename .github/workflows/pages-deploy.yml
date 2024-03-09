@@ -54,7 +54,7 @@ jobs:
 
       - name: Test site
         run: |
-          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href --http-status-ignore "404,500"
+          bundle exec htmlproofer _site --disable-external --check-html --allow_hash_href 
        
 
       - name: Upload site artifact
