@@ -101,6 +101,17 @@ git push
 
 项目根目录下打开命令窗口，执行`bundle exec jekyll s`
 
+> `bundle exec jekyll s` 是一个用于启动 Jekyll 本地开发服务器的命令。其中各个部分的含义如下：
+>
+> - `bundle exec`: 这部分指示 Ruby 使用项目中的 Gemfile 中指定的 Gem 版本来执行后面的命令。这是因为项目可能依赖于特定版本的 Gem，使用 `bundle exec` 可以确保使用正确的 Gem 版本。
+>
+> - `jekyll`: 这是要执行的命令，表示使用 Jekyll 静态网站生成器。
+>
+> - `s` 或 `serve`: 这是 Jekyll 的一个参数，用于指示 Jekyll 启动一个本地开发服务器来提供生成的网站。在新版 Jekyll 中，`serve` 可以简写为 `s`。
+{: .prompt-tip}
+
+
+
 稍等片刻，项目可以在*[http://127.0.0.1:4000](http://127.0.0.1:4000/)*访问
 
 
@@ -127,7 +138,15 @@ git push
 
 1. 配置文件哪怕写错或多写一个字母，github pages自动部署时就无法正常显示页面，但是本地测试可以
 
-## 04 jekyll使用技巧
+## 04 官方教程
+
+官方chirpy主题教程地址：https://chirpy.cotes.page/archives/
+chirpy主题教程Markdown文档源码：https://github.com/cotes2020/jekyll-theme-chirpy/tree/master/_posts
+
+
+
+
+## 05 jekyll使用技巧
 
 ### 4.1 使用插件自动新建文章
 
@@ -142,3 +161,24 @@ git push
 >
 {: .prompt-tip}
 
+### 4.2 各种颜色的提示框
+
+An example showing the `tip` type prompt. {: .prompt-tip }
+
+> An example showing the `tip` type prompt.
+  {: .prompt-tip }
+
+An example showing the `info` type prompt. {: .prompt-info }
+
+> An example showing the `info` type prompt.
+  {: .prompt-info }
+
+An example showing the `warning` type prompt. {: .prompt-warning }
+
+> An example showing the `warning` type prompt.
+  {: .prompt-warning }
+
+An example showing the `danger` type prompt. {: .prompt-danger }
+
+> An example showing the `danger` type prompt.
+ {: .prompt-danger }
